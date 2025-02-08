@@ -1,5 +1,7 @@
 import mysql.connector as mysql
 from tabulate import tabulate as tb
+"""this module specially design for those who don't know SQL and want to interact with databaes:
+default server that it interact with is Xampp :"""
 class database:
 
 
