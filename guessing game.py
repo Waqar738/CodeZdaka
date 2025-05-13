@@ -1,4 +1,5 @@
 import math
+import random
 while(True):
 
     let_play = input("Are you want to play the game :".title()).lower()
@@ -23,7 +24,7 @@ while(True):
             else:
                 range_lower = int(range_lower)
                 range_upper = int(range_upper)
-                randam = int(((range_upper + range_lower) * 0.3) + ((range_upper - range_lower) / 2))
+                randam = random.randint(range_lower,range_upper)
                 min_chance = round(math.log((range_upper - range_lower), 2))
                 trying = 0
                 print(f"( You have totall {min_chance - trying} chance )".center(80, "_"))
