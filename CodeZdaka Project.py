@@ -5,16 +5,17 @@ from ai import call_gpt
 develper = "ᵇʸ 𝕎𝕒𝕢𝕒𝕣 𝔸𝕗𝕣𝕚𝕕𝕚"
 version = "𝕍𝕖𝕣𝕤𝕚𝕠𝕟 𝟚.𝟘"
 
+
 def main():
     aval_feature = [
-        [1, 2, 3],
-        ["UNi Data", "Games", "Chat Bot"],
-        [ustbdatakarel, gameskarel, chatbotkarel]
+        [1, 2, 3,4],
+        ["Uni Data", "Games", "Chat Bot","Courses"],
+        [ustbdatakarel, gameskarel, chatbotkarel,courseskeral]
     ]
     tabulate(["ID", "Feature"], list(zip(aval_feature[0], aval_feature[1])))
-    user_input = int(input("Select feature by id :".title()))
+    user_input = int(input("ꜱᴇʟᴇᴄᴛ ꜰᴇᴀᴛᴜʀᴇ ʙʏ ɪᴅ :".title()))
     while user_input not in aval_feature[0]:
-        user_input = int(input("please select correct id :".title()))
+        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
     aval_feature[2][user_input - 1]()
 
 
@@ -27,21 +28,21 @@ def ustbdatakarel():
         [UstbData.Notes, UstbData.PastPaper, UstbData.Assignment]
     ]
     tabulate(["ID", "Data"], list(zip(data[0], data[1])))
-    user_input = int(input("Select DATA by id :".title()))
+    user_input = int(input("Sᴇʟᴇᴄᴛ Dᴀᴛᴀ ʙʏ ɪᴅ :".title()))
     while user_input not in data[0]:
-        user_input = int(input("please select correct id :".title()))
+        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
     chosen_data = data[2][user_input-1]
     # chosing semester ....
     semester = [
         [1, 2, 3],
         ["1st semester", "2nd semester", "3rd semester"],
-        [chosen_data.semester1st, chosen_data.semester1st, chosen_data.semester1st]
+        [chosen_data.semester1st, chosen_data.semester2nd, chosen_data.semester3rd]
     ]
     tabulate(["ID", "Semester"], list(zip(semester[0], semester[1])))
-    user_input = int(input("Select semester by id :".title()))
+    user_input = int(input("Sᴇʟᴇᴄᴛ sᴇᴍᴇsᴛᴇʀ ʙʏ ɪᴅ :".title()))
     while user_input not in data[0]:
-        user_input = int(input("please select correct id :".title()))
-    print("you can Download From Below links \U0001F447 :")
+        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
+    print("ʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ ʙᴇʟᴏᴡ ʟɪɴᴋs \U0001F447 :")
     semester[2][user_input-1]()
 
 
@@ -63,6 +64,9 @@ def gameskarel():
 # funtion that operate chat bot
 def chatbotkarel():
     ChatBot()
+
+def courseskeral():
+    courses()
 
 
 # function that make table
@@ -158,27 +162,44 @@ class UstbData:        # AlL university data is managed Here
 
         @staticmethod
         def semester2nd():
-            papers = ["DLD :  👉  https://drive.google.com/file/d/1R1dLJJr2-u3NXXNJgRC3Ta2FiwA4mU6m/view?usp=drive_link",
-                      "Expository Writting : 👉   https://drive.google.com/file/d/1QzlD9OWzw3p48kJFqWjG_MpQDV7XvgQd/view?usp=drive_link",
-                      "ICP : 👉   https://drive.google.com/file/d/1R2rnZ-C8EE7ngB-eaUuicyN8xfB51dXD/view?usp=drive_link",
-                      "MVC : 👉  https://drive.google.com/file/d/1QziauPLQHemRg-Y26_zRcU0IVVsMz5gi/view?usp=drive_link",
-                      "QR :  👉  https://drive.google.com/file/d/1R6JDo4kn861EKmW4ZE8eYZUOfhbFttk2/view?usp=drive_link"]
+            papers = ["DLD : 👉 https://drive.google.com/file/d/1R1dLJJr2-u3NXXNJgRC3Ta2FiwA4mU6m/view?usp=drive_link",
+                      "Expository Writting : 👉 https://drive.google.com/file/d/1QzlD9OWzw3p48kJFqWjG_MpQDV7XvgQd/view?usp=drive_link",
+                      "ICP : 👉 https://drive.google.com/file/d/1R2rnZ-C8EE7ngB-eaUuicyN8xfB51dXD/view?usp=drive_link",
+                      "MVC : 👉 https://drive.google.com/file/d/1QziauPLQHemRg-Y26_zRcU0IVVsMz5gi/view?usp=drive_link",
+                      "QR : 👉 https://drive.google.com/file/d/1R6JDo4kn861EKmW4ZE8eYZUOfhbFttk2/view?usp=drive_link"]
             print("\n".join(papers))
 
         @staticmethod
         def semester3rd():
-            print("3rd semester past papers will be Upload soon :")
+            papers = ["DataBase  : 👉 https://drive.google.com/file/d/1S7Y373ZRKcUni98b_sivq-uGMmlv5l8C/view?usp=drive_link",
+                      "Entrepreneureship : 👉 https://drive.google.com/file/d/1S9gqIrQjPBLp3BqkApj2kEpic6FGA57d/view?usp=drive_link",
+                      "Linear Algebra : 👉 https://drive.google.com/file/d/1S8abkAKWZDuH0Hela6MkDH2sVU-4bwRm/view?usp=drive_link",
+                      "Statistic : 👉 https://drive.google.com/file/d/1SCoxGidHwPqQDG-U_dwPIzU8okQYsdRA/view?usp=drive_link",]
+            print("\n".join(papers))
 
-    class Notes:# This class is for notes
+# This class is for notes
+    class Notes:
         @staticmethod
         def semester1st():
             print("1st semester Note will be Upload Soon :")
         @staticmethod
         def semester2nd():
-            print("1st semester Note will be Upload Soon :")
+            notes = ["English :  👉https://drive.google.com/file/d/1Si3lYhX6z8MQw-hKu7k55NvlwXrKakLL/view?usp=drive_link"
+
+            ]
+            print("\n".join(notes))
         @staticmethod
         def semester3rd():
-            print("1st semester Note will be Upload Soon :")
+            notes = [
+                "Civic :  👉 https://drive.google.com/file/d/1SNLGMHQjeR5bciWNx0E9nZiB0P5_17bp/view?usp=drive_link",
+                "DataBase :  👉 https://drive.google.com/file/d/1SLsN54NJtbclF9yJ3eqAcC9_3VhaiWSE/view?usp=drive_link",
+                "Entrepreneureship :  👉 https://drive.google.com/file/d/1SICxjYz34micfcJBvl7t3urcMNnuYOdi/view?usp=drive_link",
+                "Linear Algebra :  👉 https://drive.google.com/file/d/1SPTr0_rKa8GIR9F_zlopHiDt0rd02mjY/view?usp=drive_link",
+                "Management :  👉 https://drive.google.com/file/d/1SRjEHSvlBtYDD_Xen247XTupvFYrCGZi/view?usp=drive_link",
+                "Statistic :  👉 https://drive.google.com/file/d/1SIpZfxhHyJoCPUHNiYYiagBn1gix0vcy/view?usp=drive_link",
+                "T&B Writing :  👉 https://drive.google.com/file/d/1SVYh7_pPpZwfVpyYA_oIO6-6h9RoveEn/view?usp=drive_link"
+            ]
+            print("\n".join(notes))
 
 
 
@@ -189,28 +210,46 @@ class UstbData:        # AlL university data is managed Here
 
         @staticmethod
         def semester2nd():
-            print("1st semester assignment will be Upload Soon :")
+            assign = ["DLD mid Exam : 👉 https://drive.google.com/file/d/1T4yMPVWwTZSrx7OJmzWAobRGYLEtGs3z/view?usp=drive_link",
+                      "DLD part 2 : 👉 https://drive.google.com/file/d/1StgmTQpsCRLG-Imb0TZsuQ-G3H6ZkDav/view?usp=drive_link",
+                      "DLD part 1 : 👉 https://drive.google.com/file/d/1T-WhVR1t5Uq9lhuLJVxNgJvqhJZ0_Z-n/view?usp=drive_link",
+                      "English : 👉 https://drive.google.com/file/d/1Ss6dqZ9AF-7DFvyjEBXBzPddiuKLR3TA/view?usp=drive_link",
+                      "ICP Mid Exam : 👉 https://drive.google.com/file/d/1SnC6IlUm6xANOeTwVuu-KW0STid6dzPs/view?usp=drive_link",
+                      "ICP : 👉 https://drive.google.com/file/d/1Sm4qzlGLdiGwxJXozR4Dsv-pWiLdfcBl/view?usp=drive_link",
+                      "Math Mid Exam : 👉 https://drive.google.com/file/d/1SiLv8GBLqAvE2IrJSCyWlsyhO-HEofeE/view?usp=drive_link",
+                      "MVC : 👉 https://drive.google.com/file/d/1SkbX7dQg_v3awjSeBfwrllQj9sbExl-_/view?usp=drive_link",
+                      "OOP Mid Exam : 👉 https://drive.google.com/file/d/1SxPssyjk17zuYYglvOvTqvd77FUi3fL9/view?usp=drive_link",
+                      "QR : 👉 https://drive.google.com/file/d/1Sozf0_zBbB4laW_LLcPWUfB8suv-fTKJ/view?usp=drive_link"
+            ]
+            print("\n".join(assign))
 
         @staticmethod
         def semester3rd():
-            print("1st semester assignment will be Upload Soon :")
+            assign = ["Linear Algebra Final : 👉 https://drive.google.com/file/d/1T8-GM4Mu-XfEoNpsQVdXg035IP3KME2a/view?usp=drive_link",
+                      "Linear Algebra Mid : 👉 https://drive.google.com/file/d/1T5nR5e4enwOTDo3BwFyfa40g6Nk-nvXp/view?usp=drive_link"
+
+            ]
 
 
 class ChatBot:
     def __init__(self):
-        print('I am Exam Bot Coded By Waqar Afridi \U0001F92A.\nYou Can Ask Any Question Releted To Your Exam \U0001F644 .')
+        print('ɪ ᴀᴍ ᴇxᴀᴍ ʙᴏᴛ ᴄᴏᴅᴇᴅ ʙʏ ᴡᴀǫᴀʀ ᴀғʀɪᴅɪ \U0001F92A.\nʏᴏᴜ ᴄᴀɴ ᴀsᴋ ᴀɴʏ ǫᴜᴇsᴛɪᴏɴ ʀᴇʟᴇᴛᴇᴅ ᴛᴏ ʏᴏᴜʀ ᴇxᴀᴍ \U0001F644 .')
         while True:
-            user = input("Ask Question:")
-            print("wait Am thinking.... \U0001F914")
+            user = input("ᴀsᴋ ԛᴜᴇsᴛɪᴏɴ:")
+            print("ᴡᴀɪᴛ ᴀᴍ ᴛʜɪɴᴋɪɴɢ.... \U0001F914")
             response = call_gpt("define for exam paper without example and analogy and always used sample and easiest words and sentences:" + user)
             print(response)
-            print("\nlets Understand with Example \U0001F447\n")
+            print("\nʟᴇᴛs ᴜɴᴅᴇʀsᴛᴀɴᴅ ᴡɪᴛʜ ᴇxᴀᴍᴘʟᴇ \U0001F447\n")
             response1 = call_gpt("use easiest words and sentance and give just example for --> " + user)
             print(response1)
-            print("\nlets Understand with Analogy \U0001F447\n")
+            print("\nʟᴇᴛs ᴜɴᴅᴇʀsᴛᴀɴᴅ ᴡɪᴛʜ ᴀɴᴀʟᴏɢʏ \U0001F447\n")
             response2 = call_gpt("use easiest words and sentance and just analogy for --> " + user)
             print(response2)
 
+
+class courses:
+    def __init__(self):
+        print("Cᴏᴍᴘᴜᴛᴇʀ ʀᴇʟᴀᴛᴇᴅ ᴄᴏᴜʀsᴇs ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ sᴏᴏɴ , sᴏ sᴛᴀʏ ᴛᴜɴᴇᴅ !")
 
 
 
@@ -218,3 +257,4 @@ class ChatBot:
 if __name__ == "__main__":
     print(f"𝕊𝕒𝕝𝕠𝕞 \U0001F44B !!!\nᴛʜɪs ᴘʀᴏɢʀᴀᴍ ᴄᴏᴅᴇᴅ ʙʏ ᴄᴏᴅᴇᴢᴅᴀᴋᴀ-ᴜsᴛʙ ᴛᴇᴀᴍ 🥰\n{version}\n{develper}\n")
     main()
+    print("ᴛʜᴀɴᴋs ꜰᴏʀ ᴜsɪɴɢ — 🥰\nᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ᴘʀᴏʙʟᴇᴍ ᴏʀ ᴍɪssɪɴɢ ᴅᴀᴛᴀ ᴛᴏ \U0001F447 \n+923126565549")
