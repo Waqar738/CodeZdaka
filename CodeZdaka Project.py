@@ -68,7 +68,6 @@ def chatbotkarel():
 def courseskeral():
     courses()
 
-
 # function that make table
 def tabulate(headers, data):
     # Combine headers and data to calculate column widths
@@ -227,7 +226,6 @@ class UstbData:        # AlL university data is managed Here
         def semester3rd():
             assign = ["Linear Algebra Final : 👉 https://drive.google.com/file/d/1T8-GM4Mu-XfEoNpsQVdXg035IP3KME2a/view?usp=drive_link",
                       "Linear Algebra Mid : 👉 https://drive.google.com/file/d/1T5nR5e4enwOTDo3BwFyfa40g6Nk-nvXp/view?usp=drive_link"
-
             ]
 
 
@@ -249,7 +247,10 @@ class ChatBot:
 
 class courses:
     def __init__(self):
-        print("Cᴏᴍᴘᴜᴛᴇʀ ʀᴇʟᴀᴛᴇᴅ ᴄᴏᴜʀsᴇs ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ sᴏᴏɴ , sᴏ sᴛᴀʏ ᴛᴜɴᴇᴅ !")
+        course = ["Aᴡғᴇʀᴀ ᴀʟᴍs : https://awferalms.com/ \nɴᴄʟᴜᴅᴇ \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ \n➔ Dᴀᴛᴀ Sᴄɪᴇɴᴄᴇ\n➔ Mᴀᴄʜɪɴᴇ ʟᴇᴀʀɴɪɴɢ \n➔ Dᴇᴇᴘ ʟᴇᴀʀɴɪɴɢ ᴇssᴇɴᴛɪᴀʟs\n➔ ɴᴀᴛᴜʀᴀʟ ʟᴀɴɢᴜᴀɢᴇ ᴘʀᴏᴄᴇssɪɴɢ\n",
+                  "Cᴏᴅᴇ ɪɴ ᴘʟᴀᴄᴇ --> Sᴛᴀɴғᴏʀᴅ ᴜɴɪᴠᴇʀsɪᴛʏ : 👉 https://codeinplace.stanford.edu/ \nɴᴄʟᴜᴅᴇ \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ"]
+        print("\n".join(course))
+        # print("Cᴏᴍᴘᴜᴛᴇʀ ʀᴇʟᴀᴛᴇᴅ ᴄᴏᴜʀsᴇs ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ sᴏᴏɴ , sᴏ sᴛᴀʏ ᴛᴜɴᴇᴅ !")
 
 
 
