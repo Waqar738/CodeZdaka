@@ -247,9 +247,9 @@ class ChatBot:
 
 class courses:
     def __init__(self):
-        course = ["Aᴡғᴇʀᴀ ᴀʟᴍs : https://awferalms.com/ \nɴᴄʟᴜᴅᴇ \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ \n➔ Dᴀᴛᴀ Sᴄɪᴇɴᴄᴇ\n➔ Mᴀᴄʜɪɴᴇ ʟᴇᴀʀɴɪɴɢ \n➔ Dᴇᴇᴘ ʟᴇᴀʀɴɪɴɢ ᴇssᴇɴᴛɪᴀʟs\n➔ ɴᴀᴛᴜʀᴀʟ ʟᴀɴɢᴜᴀɢᴇ ᴘʀᴏᴄᴇssɪɴɢ\n",
-                  "Cᴏᴅᴇ ɪɴ ᴘʟᴀᴄᴇ --> Sᴛᴀɴғᴏʀᴅ ᴜɴɪᴠᴇʀsɪᴛʏ : 👉 https://codeinplace.stanford.edu/ \nɴᴄʟᴜᴅᴇ \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ"]
-        print("\n".join(course))
+        course = ["① Aᴡғᴇʀᴀ ᴀʟᴍs : https://awferalms.com/ \nOꜰꜰᴇʀs \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ \n➔ Dᴀᴛᴀ Sᴄɪᴇɴᴄᴇ\n➔ Mᴀᴄʜɪɴᴇ ʟᴇᴀʀɴɪɴɢ \n➔ Dᴇᴇᴘ ʟᴇᴀʀɴɪɴɢ ᴇssᴇɴᴛɪᴀʟs\n➔ ɴᴀᴛᴜʀᴀʟ ʟᴀɴɢᴜᴀɢᴇ ᴘʀᴏᴄᴇssɪɴɢ\n\n",
+                  "② Cᴏᴅᴇ ɪɴ ᴘʟᴀᴄᴇ --> Sᴛᴀɴғᴏʀᴅ ᴜɴɪᴠᴇʀsɪᴛʏ : 👉 https://codeinplace.stanford.edu/ \nOꜰꜰᴇʀs \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ"]
+        print("\n\n+=====+=====+=====+=====+\n\n".join(course))
         # print("Cᴏᴍᴘᴜᴛᴇʀ ʀᴇʟᴀᴛᴇᴅ ᴄᴏᴜʀsᴇs ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ sᴏᴏɴ , sᴏ sᴛᴀʏ ᴛᴜɴᴇᴅ !")
 
 
