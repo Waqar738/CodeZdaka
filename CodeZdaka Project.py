@@ -42,7 +42,7 @@ def ustbdatakarel():
     user_input = int(input("Sᴇʟᴇᴄᴛ sᴇᴍᴇsᴛᴇʀ ʙʏ ɪᴅ :".title()))
     while user_input not in data[0]:
         user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
-    print("ʏᴏᴜ ᴄᴀɴ ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ ʙᴇʟᴏᴡ ʟɪɴᴋs \U0001F447 :")
+    print("ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ ʙᴇʟᴏᴡ Gᴏᴏɢʟᴇ Dʀɪᴠᴇ ʟɪɴᴋs \U0001F447 :")
     semester[2][user_input-1]()
 
 
@@ -247,8 +247,8 @@ class ChatBot:
 
 class courses:
     def __init__(self):
-        course = ["① Aᴡғᴇʀᴀ ᴀʟᴍs : https://awferalms.com/ \nOꜰꜰᴇʀs \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ \n➔ Dᴀᴛᴀ Sᴄɪᴇɴᴄᴇ\n➔ Mᴀᴄʜɪɴᴇ ʟᴇᴀʀɴɪɴɢ \n➔ Dᴇᴇᴘ ʟᴇᴀʀɴɪɴɢ ᴇssᴇɴᴛɪᴀʟs\n➔ ɴᴀᴛᴜʀᴀʟ ʟᴀɴɢᴜᴀɢᴇ ᴘʀᴏᴄᴇssɪɴɢ\n\n",
-                  "② Cᴏᴅᴇ ɪɴ ᴘʟᴀᴄᴇ --> Sᴛᴀɴғᴏʀᴅ ᴜɴɪᴠᴇʀsɪᴛʏ : 👉 https://codeinplace.stanford.edu/ \nOꜰꜰᴇʀs \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ"]
+        course = ["①𝗔𝘄𝗳𝗲𝗿𝗮 𝗔𝗟𝗠𝗦 : https://awferalms.com/ \nOꜰꜰᴇʀs \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ \n➔ Dᴀᴛᴀ Sᴄɪᴇɴᴄᴇ\n➔ Mᴀᴄʜɪɴᴇ ʟᴇᴀʀɴɪɴɢ \n➔ Dᴇᴇᴘ ʟᴇᴀʀɴɪɴɢ ᴇssᴇɴᴛɪᴀʟs\n➔ ɴʟ ᴘʀᴏᴄᴇssɪɴɢ",
+                  "②(𝗖𝗜𝗣) 𝗦𝘁𝗮𝗻𝗳𝗼𝗿𝗱 𝘂𝗻𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆 : 👉 https://codeinplace.stanford.edu/ \nOꜰꜰᴇʀs \U0001F447\n➔ ᴘʏᴛʜᴏɴ ᴘʀᴏɢʀᴀᴍɪɴɢ"]
         print("\n\n+=====+=====+=====+=====+\n\n".join(course))
         # print("Cᴏᴍᴘᴜᴛᴇʀ ʀᴇʟᴀᴛᴇᴅ ᴄᴏᴜʀsᴇs ᴡɪʟʟ ᴜᴘʟᴏᴀᴅ sᴏᴏɴ , sᴏ sᴛᴀʏ ᴛᴜɴᴇᴅ !")
 
@@ -258,4 +258,4 @@ class courses:
 if __name__ == "__main__":
     print(f"𝕊𝕒𝕝𝕠𝕞 \U0001F44B !!!\nᴛʜɪs ᴘʀᴏɢʀᴀᴍ ᴄᴏᴅᴇᴅ ʙʏ ᴄᴏᴅᴇᴢᴅᴀᴋᴀ-ᴜsᴛʙ ᴛᴇᴀᴍ 🥰\n{version}\n{develper}\n")
     main()
-    print("ᴛʜᴀɴᴋs ꜰᴏʀ ᴜsɪɴɢ — 🥰\nᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ᴘʀᴏʙʟᴇᴍ ᴏʀ ᴍɪssɪɴɢ ᴅᴀᴛᴀ ᴛᴏ \U0001F447 \n+923126565549")
+    print("ᴛʜᴀɴᴋs ꜰᴏʀ ᴜsɪɴɢ — 🥰\nᴘʟᴇᴀsᴇ ʀᴇᴘᴏʀᴛ ᴘʀᴏʙʟᴇᴍ ᴏʀ ᴍɪssɪɴɢ ᴅᴀᴛᴀ ᴛᴏ \U0001F447 ᴛᴏ ʙᴇ ᴀᴅᴅ\n+923126565549")
