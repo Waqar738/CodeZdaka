@@ -12,10 +12,7 @@ def main():
         ["Uni Data", "Games", "Chat Bot","Courses"],
         [ustbdatakarel, gameskarel, chatbotkarel,courseskeral]
     ]
-    tabulate(["ID", "Feature"], list(zip(aval_feature[0], aval_feature[1])))
-    user_input = int(input("ꜱᴇʟᴇᴄᴛ ꜰᴇᴀᴛᴜʀᴇ ʙʏ ɪᴅ :".title()))
-    while user_input not in aval_feature[0]:
-        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
+    user_input = chooser(aval_feature,"Feature")
     aval_feature[2][user_input - 1]()
 
 
@@ -27,10 +24,7 @@ def ustbdatakarel():
         ["Notes", "Past Paper", "Assignment"],
         [UstbData.Notes, UstbData.PastPaper, UstbData.Assignment]
     ]
-    tabulate(["ID", "Data"], list(zip(data[0], data[1])))
-    user_input = int(input("Sᴇʟᴇᴄᴛ Dᴀᴛᴀ ʙʏ ɪᴅ :".title()))
-    while user_input not in data[0]:
-        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
+    user_input = chooser(data, "Data")
     chosen_data = data[2][user_input-1]
     # chosing semester ....
     semester = [
@@ -38,10 +32,7 @@ def ustbdatakarel():
         ["1st semester", "2nd semester", "3rd semester"],
         [chosen_data.semester1st, chosen_data.semester2nd, chosen_data.semester3rd]
     ]
-    tabulate(["ID", "Semester"], list(zip(semester[0], semester[1])))
-    user_input = int(input("Sᴇʟᴇᴄᴛ sᴇᴍᴇsᴛᴇʀ ʙʏ ɪᴅ :".title()))
-    while user_input not in data[0]:
-        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
+    user_input = chooser(semester, "khan")
     print("ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ ʙᴇʟᴏᴡ Gᴏᴏɢʟᴇ Dʀɪᴠᴇ ʟɪɴᴋs \U0001F447 :")
     semester[2][user_input-1]()
 
@@ -54,10 +45,7 @@ def gameskarel():
         ["Number Guessing"],
         [Game.guessing]
     ]
-    tabulate(["ID", "Games"], list(zip(aval_games[0], aval_games[1])))
-    user_input = int(input("Select Game by id :".title()))
-    while user_input not in aval_games[0]:
-        user_input = int(input("please select correct id :".title()))
+    user_input = chooser(aval_games,"Games")
     aval_games[2][user_input - 1]()
 
 
@@ -93,6 +81,14 @@ def tabulate(headers, data):
 
     # Join and print all lines with a single print()
     print("\n".join(lines))
+
+
+def chooser(items_list,items):
+    tabulate(["ID", items], list(zip(items_list[0], items_list[1])))
+    user_input = int(input(f"Sᴇʟᴇᴄᴛ {items} ʙʏ ɪᴅ :".title()))
+    while user_input not in items_list[0]:
+        user_input = int(input("ᴘʟᴇᴀsᴇ sᴇʟᴇᴄᴛ ᴄᴏʀʀᴇᴄᴛ ɪᴅ :".title()))
+    return user_input
 
 class Game:     # All Games are managed here
     @staticmethod
