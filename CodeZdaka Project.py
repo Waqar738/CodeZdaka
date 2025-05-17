@@ -32,7 +32,7 @@ def ustbdatakarel():
         ["1st semester", "2nd semester", "3rd semester"],
         [chosen_data.semester1st, chosen_data.semester2nd, chosen_data.semester3rd]
     ]
-    user_input = chooser(semester, "khan")
+    user_input = chooser(semester, "Semester")
     print("ᴅᴏᴡɴʟᴏᴀᴅ ꜰʀᴏᴍ ʙᴇʟᴏᴡ Gᴏᴏɢʟᴇ Dʀɪᴠᴇ ʟɪɴᴋs \U0001F447 :")
     semester[2][user_input-1]()
 
@@ -186,13 +186,14 @@ class UstbData:        # AlL university data is managed Here
         @staticmethod
         def semester3rd():
             notes = [
-                "Civic :  👉 https://drive.google.com/file/d/1SNLGMHQjeR5bciWNx0E9nZiB0P5_17bp/view?usp=drive_link",
-                "DataBase :  👉 https://drive.google.com/file/d/1SLsN54NJtbclF9yJ3eqAcC9_3VhaiWSE/view?usp=drive_link",
-                "Entrepreneureship :  👉 https://drive.google.com/file/d/1SICxjYz34micfcJBvl7t3urcMNnuYOdi/view?usp=drive_link",
-                "Linear Algebra :  👉 https://drive.google.com/file/d/1SPTr0_rKa8GIR9F_zlopHiDt0rd02mjY/view?usp=drive_link",
-                "Management :  👉 https://drive.google.com/file/d/1SRjEHSvlBtYDD_Xen247XTupvFYrCGZi/view?usp=drive_link",
-                "Statistic :  👉 https://drive.google.com/file/d/1SIpZfxhHyJoCPUHNiYYiagBn1gix0vcy/view?usp=drive_link",
-                "T&B Writing :  👉 https://drive.google.com/file/d/1SVYh7_pPpZwfVpyYA_oIO6-6h9RoveEn/view?usp=drive_link"
+                # "Civic :  👉 https://drive.google.com/file/d/1SNLGMHQjeR5bciWNx0E9nZiB0P5_17bp/view?usp=drive_link",
+                # "DataBase :  👉 https://drive.google.com/file/d/1SLsN54NJtbclF9yJ3eqAcC9_3VhaiWSE/view?usp=drive_link",
+                # "Entrepreneureship :  👉 https://drive.google.com/file/d/1SICxjYz34micfcJBvl7t3urcMNnuYOdi/view?usp=drive_link",
+                # "Linear Algebra :  👉 https://drive.google.com/file/d/1SPTr0_rKa8GIR9F_zlopHiDt0rd02mjY/view?usp=drive_link",
+                # "Management :  👉 https://drive.google.com/file/d/1SRjEHSvlBtYDD_Xen247XTupvFYrCGZi/view?usp=drive_link",
+                # "Statistic :  👉 https://drive.google.com/file/d/1SIpZfxhHyJoCPUHNiYYiagBn1gix0vcy/view?usp=drive_link",
+                # "T&B Writing :  👉 https://drive.google.com/file/d/1SVYh7_pPpZwfVpyYA_oIO6-6h9RoveEn/view?usp=drive_link"
+                "3rd Semester Notes : 👉 https://drive.google.com/drive/folders/1ShfbZipLY-TZ4J08gc_86Y7_osYnid6e?usp=drive_link"
             ]
             print("\n".join(notes))
 
